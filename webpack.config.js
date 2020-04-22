@@ -4,7 +4,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: [
-    "./src/js/jquery-3.5.0.min.js",
     "./src/js/script.js",
     "./src/scss/style.scss"
   ],

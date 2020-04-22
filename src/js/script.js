@@ -73,10 +73,10 @@ $("document").ready(function () {
     if (checkGameEnded()) {
       if (winner === "x") {
         $(".game-log").addClass("game-log_x-won");
-        $(".game-log").html("X-player won!");
+        $(".game-log").html("<span class='info__span_red'>X</span> won!");
       } else if (winner === "o") {
         $(".game-log").addClass("game-log_o-won");
-        $(".game-log").html("O-player won!");
+        $(".game-log").html("<span class='info__span_blue'>O</span> won!");
       }
     } else if (checkDraw()) {
       $(".game-log").addClass("game-log_draw");

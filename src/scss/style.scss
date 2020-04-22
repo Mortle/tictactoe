@@ -15,18 +15,16 @@ html {
   margin: 2em auto;
   text-align: center;
   line-height: 1.5;
+}
 
-  span {
-    &.red {
-      color: $x-color;
-      font-weight: 1000;
-    }
+.info__span_red {
+  color: $x-color;
+  font-weight: 1000;
+}
 
-    &.blue {
-      color: $o-color;
-      font-weight: 1000;
-    }
-  }
+.info__span_blue {
+  color: $o-color;
+  font-weight: 1000;
 }
 
 .info__button {

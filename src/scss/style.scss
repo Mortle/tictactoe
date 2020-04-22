@@ -1,8 +1,13 @@
+$base-color: #1a2139;
+$x-color:    #f73a18;
+$o-color:    #333e5b;
+$tile-color: #9d9683;
+
 html {
   font-family: "Comic Sans MS", sans-serif;
   font-weight: 400;
   font-size: 15px;
-  color: #1a2139;
+  color: $base-color;
 }
 
 .info {
@@ -13,12 +18,12 @@ html {
 
   span {
     &.red {
-      color: #f73a18;
+      color: $x-color;
       font-weight: 1000;
     }
 
     &.blue {
-      color: #333e5b;
+      color: $o-color;
       font-weight: 1000;
     }
   }
@@ -27,7 +32,7 @@ html {
 .info__button {
   width: 150px;
   height: 25px;
-  border: 2px #1a2139 solid;
+  border: 2px $base-color solid;
   border-radius: 5px;
   padding: 5px;
   margin: 0 auto;
@@ -61,7 +66,7 @@ html {
 .game-field__tile_free {
   opacity: 1;
   transition: 0.2s;
-  background-color: #9d9683;
+  background-color: $tile-color;
 
   &:hover {
     opacity: 0.9;
@@ -69,11 +74,11 @@ html {
 }
 
 .game-field__tile_x-played {
-  background-color: #f73a18;
+  background-color: $x-color;
 }
 
 .game-field__tile_o-played {
-  background-color: #333e5b;
+  background-color: $o-color;
 }
 
 .game-log {
@@ -85,13 +90,13 @@ html {
 }
 
 .game-log_draw {
-  color: #1a2139;
+  color: $base-color;
 }
 
 .game-log_x-won {
-  color: #f73a18;
+  color: $x-color;
 }
 
 .game-log_o-won {
-  color: #333e5b;
+  color: $o-color;
 }
